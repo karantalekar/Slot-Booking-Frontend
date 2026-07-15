@@ -39,7 +39,8 @@ npm run dev
 
 Open <http://localhost:3000>. By default, the app uses the deployed API at
 <https://slot-booking-backend-kubj.onrender.com>. To use a different API, copy
-`.env.local.example` to `.env.local` and update `NEXT_PUBLIC_API_URL`.
+`.env.local.example` to `.env.local` and update `BACKEND_URL`. Browser requests
+are sent through the frontend's same-origin `/api` proxy to avoid CORS issues.
 
 ## Exactly how double-booking is prevented
 

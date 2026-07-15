@@ -5,9 +5,7 @@ import {
   SlotsResponse,
 } from '@/types';
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ??
-  'https://slot-booking-backend-kubj.onrender.com';
+const API_URL = '/api';
 
 async function readJson<T>(response: Response): Promise<T> {
   const data = (await response.json().catch(() => null)) as T | null;
