@@ -37,7 +37,9 @@ npm run dev:api
 npm run dev
 ```
 
-Open <http://localhost:3000>. The API is at <http://localhost:5000>.
+Open <http://localhost:3000>. By default, the app uses the deployed API at
+<https://slot-booking-backend-kubj.onrender.com>. To use a different API, copy
+`.env.local.example` to `.env.local` and update `NEXT_PUBLIC_API_URL`.
 
 ## Exactly how double-booking is prevented
 
