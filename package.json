@@ -1,0 +1,32 @@
+{
+  "name": "slot-booking-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:api": "npm --prefix Slot-Booking-Backend run dev",
+    "seed": "npm --prefix Slot-Booking-Backend run seed",
+    "build": "next build",
+    "build:api": "npm --prefix Slot-Booking-Backend run build",
+    "build:all": "npm run build && npm run build:api",
+    "test:concurrency": "npm --prefix Slot-Booking-Backend run test:concurrency",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.0",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.10",
+    "postcss": "^8.5",
+    "tailwindcss": "^4.2.0",
+    "typescript": "5.7.3"
+  }
+}
